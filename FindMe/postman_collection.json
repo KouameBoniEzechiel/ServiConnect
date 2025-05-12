@@ -1,0 +1,1169 @@
+{
+  "info": {
+    "name": "FindMe API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "admin_logs",
+      "item": [
+        {
+          "name": "admin_logs-getByCriteria",
+          "request": {
+            "method": "GET",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"name\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/admin_logs/getByCriteria",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["admin_logs", "getByCriteria"]
+            }
+          }
+        },
+        {
+          "name": "admin_logs-create",
+          "request": {
+            "method": "POST",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"name\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/admin_logs/create",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["admin_logs", "create"]
+            }
+          }
+        },
+        {
+          "name": "admin_logs-update",
+          "request": {
+            "method": "PATCH",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"id\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/admin_logs/update",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["admin_logs", "update"]
+            }
+          }
+        },
+        {
+          "name": "admin_logs-delete",
+          "request": {
+            "method": "DELETE",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"id\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/admin_logs/delete",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["admin_logs", "delete"]
+            }
+          }
+        }
+      ]
+    }
+,
+    {
+      "name": "booking_statuses",
+      "item": [
+        {
+          "name": "booking_statuses-getByCriteria",
+          "request": {
+            "method": "GET",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"name\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/booking_statuses/getByCriteria",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["booking_statuses", "getByCriteria"]
+            }
+          }
+        },
+        {
+          "name": "booking_statuses-create",
+          "request": {
+            "method": "POST",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"name\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/booking_statuses/create",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["booking_statuses", "create"]
+            }
+          }
+        },
+        {
+          "name": "booking_statuses-update",
+          "request": {
+            "method": "PATCH",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"id\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/booking_statuses/update",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["booking_statuses", "update"]
+            }
+          }
+        },
+        {
+          "name": "booking_statuses-delete",
+          "request": {
+            "method": "DELETE",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"id\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/booking_statuses/delete",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["booking_statuses", "delete"]
+            }
+          }
+        }
+      ]
+    }
+,
+    {
+      "name": "bookings",
+      "item": [
+        {
+          "name": "bookings-getByCriteria",
+          "request": {
+            "method": "GET",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"name\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/bookings/getByCriteria",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["bookings", "getByCriteria"]
+            }
+          }
+        },
+        {
+          "name": "bookings-create",
+          "request": {
+            "method": "POST",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"name\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/bookings/create",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["bookings", "create"]
+            }
+          }
+        },
+        {
+          "name": "bookings-update",
+          "request": {
+            "method": "PATCH",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"id\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/bookings/update",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["bookings", "update"]
+            }
+          }
+        },
+        {
+          "name": "bookings-delete",
+          "request": {
+            "method": "DELETE",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"id\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/bookings/delete",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["bookings", "delete"]
+            }
+          }
+        }
+      ]
+    }
+,
+    {
+      "name": "payment_statuses",
+      "item": [
+        {
+          "name": "payment_statuses-getByCriteria",
+          "request": {
+            "method": "GET",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"name\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/payment_statuses/getByCriteria",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["payment_statuses", "getByCriteria"]
+            }
+          }
+        },
+        {
+          "name": "payment_statuses-create",
+          "request": {
+            "method": "POST",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"name\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/payment_statuses/create",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["payment_statuses", "create"]
+            }
+          }
+        },
+        {
+          "name": "payment_statuses-update",
+          "request": {
+            "method": "PATCH",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"id\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/payment_statuses/update",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["payment_statuses", "update"]
+            }
+          }
+        },
+        {
+          "name": "payment_statuses-delete",
+          "request": {
+            "method": "DELETE",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"id\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/payment_statuses/delete",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["payment_statuses", "delete"]
+            }
+          }
+        }
+      ]
+    }
+,
+    {
+      "name": "payments",
+      "item": [
+        {
+          "name": "payments-getByCriteria",
+          "request": {
+            "method": "GET",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"name\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/payments/getByCriteria",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["payments", "getByCriteria"]
+            }
+          }
+        },
+        {
+          "name": "payments-create",
+          "request": {
+            "method": "POST",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"name\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/payments/create",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["payments", "create"]
+            }
+          }
+        },
+        {
+          "name": "payments-update",
+          "request": {
+            "method": "PATCH",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"id\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/payments/update",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["payments", "update"]
+            }
+          }
+        },
+        {
+          "name": "payments-delete",
+          "request": {
+            "method": "DELETE",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"id\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/payments/delete",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["payments", "delete"]
+            }
+          }
+        }
+      ]
+    }
+,
+    {
+      "name": "professions",
+      "item": [
+        {
+          "name": "professions-getByCriteria",
+          "request": {
+            "method": "GET",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"name\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/professions/getByCriteria",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["professions", "getByCriteria"]
+            }
+          }
+        },
+        {
+          "name": "professions-create",
+          "request": {
+            "method": "POST",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"name\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/professions/create",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["professions", "create"]
+            }
+          }
+        },
+        {
+          "name": "professions-update",
+          "request": {
+            "method": "PATCH",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"id\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/professions/update",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["professions", "update"]
+            }
+          }
+        },
+        {
+          "name": "professions-delete",
+          "request": {
+            "method": "DELETE",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"id\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/professions/delete",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["professions", "delete"]
+            }
+          }
+        }
+      ]
+    }
+,
+    {
+      "name": "providers",
+      "item": [
+        {
+          "name": "providers-getByCriteria",
+          "request": {
+            "method": "GET",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"name\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/providers/getByCriteria",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["providers", "getByCriteria"]
+            }
+          }
+        },
+        {
+          "name": "providers-create",
+          "request": {
+            "method": "POST",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"name\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/providers/create",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["providers", "create"]
+            }
+          }
+        },
+        {
+          "name": "providers-update",
+          "request": {
+            "method": "PATCH",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"id\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/providers/update",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["providers", "update"]
+            }
+          }
+        },
+        {
+          "name": "providers-delete",
+          "request": {
+            "method": "DELETE",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"id\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/providers/delete",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["providers", "delete"]
+            }
+          }
+        }
+      ]
+    }
+,
+    {
+      "name": "providers_statuses",
+      "item": [
+        {
+          "name": "providers_statuses-getByCriteria",
+          "request": {
+            "method": "GET",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"name\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/providers_statuses/getByCriteria",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["providers_statuses", "getByCriteria"]
+            }
+          }
+        },
+        {
+          "name": "providers_statuses-create",
+          "request": {
+            "method": "POST",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"name\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/providers_statuses/create",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["providers_statuses", "create"]
+            }
+          }
+        },
+        {
+          "name": "providers_statuses-update",
+          "request": {
+            "method": "PATCH",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"id\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/providers_statuses/update",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["providers_statuses", "update"]
+            }
+          }
+        },
+        {
+          "name": "providers_statuses-delete",
+          "request": {
+            "method": "DELETE",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"id\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/providers_statuses/delete",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["providers_statuses", "delete"]
+            }
+          }
+        }
+      ]
+    }
+,
+    {
+      "name": "reviews",
+      "item": [
+        {
+          "name": "reviews-getByCriteria",
+          "request": {
+            "method": "GET",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"name\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/reviews/getByCriteria",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["reviews", "getByCriteria"]
+            }
+          }
+        },
+        {
+          "name": "reviews-create",
+          "request": {
+            "method": "POST",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"name\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/reviews/create",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["reviews", "create"]
+            }
+          }
+        },
+        {
+          "name": "reviews-update",
+          "request": {
+            "method": "PATCH",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"id\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/reviews/update",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["reviews", "update"]
+            }
+          }
+        },
+        {
+          "name": "reviews-delete",
+          "request": {
+            "method": "DELETE",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"id\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/reviews/delete",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["reviews", "delete"]
+            }
+          }
+        }
+      ]
+    }
+,
+    {
+      "name": "roles",
+      "item": [
+        {
+          "name": "roles-getByCriteria",
+          "request": {
+            "method": "GET",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"name\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/roles/getByCriteria",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["roles", "getByCriteria"]
+            }
+          }
+        },
+        {
+          "name": "roles-create",
+          "request": {
+            "method": "POST",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"name\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/roles/create",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["roles", "create"]
+            }
+          }
+        },
+        {
+          "name": "roles-update",
+          "request": {
+            "method": "PATCH",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"id\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/roles/update",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["roles", "update"]
+            }
+          }
+        },
+        {
+          "name": "roles-delete",
+          "request": {
+            "method": "DELETE",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"id\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/roles/delete",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["roles", "delete"]
+            }
+          }
+        }
+      ]
+    }
+,
+    {
+      "name": "services",
+      "item": [
+        {
+          "name": "services-getByCriteria",
+          "request": {
+            "method": "GET",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"name\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/services/getByCriteria",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["services", "getByCriteria"]
+            }
+          }
+        },
+        {
+          "name": "services-create",
+          "request": {
+            "method": "POST",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"name\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/services/create",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["services", "create"]
+            }
+          }
+        },
+        {
+          "name": "services-update",
+          "request": {
+            "method": "PATCH",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"id\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/services/update",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["services", "update"]
+            }
+          }
+        },
+        {
+          "name": "services-delete",
+          "request": {
+            "method": "DELETE",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"id\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/services/delete",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["services", "delete"]
+            }
+          }
+        }
+      ]
+    }
+,
+    {
+      "name": "user",
+      "item": [
+        {
+          "name": "user-getByCriteria",
+          "request": {
+            "method": "GET",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"name\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/user/getByCriteria",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["user", "getByCriteria"]
+            }
+          }
+        },
+        {
+          "name": "user-create",
+          "request": {
+            "method": "POST",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"name\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/user/create",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["user", "create"]
+            }
+          }
+        },
+        {
+          "name": "user-update",
+          "request": {
+            "method": "PATCH",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"id\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/user/update",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["user", "update"]
+            }
+          }
+        },
+        {
+          "name": "user-delete",
+          "request": {
+            "method": "DELETE",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"id\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/user/delete",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["user", "delete"]
+            }
+          }
+        }
+        ,
+        {
+          "name": "user-login",
+          "request": {
+            "method": "POST",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"email\": \"\",\n    \"password\": \"\" }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/user/login",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["user", "login"]
+            }
+          }
+        },
+        {
+          "name": "user-me",
+          "request": {
+            "method": "GET",
+            "header": [
+              {"key": "Content-Type", "value": "application/json"},
+              {"key": "Authorization", "value": "Bearer {{token}}"}
+            ],
+            "url": {
+              "raw": "http://localhost:3000/user/me",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["user", "me"]
+            }
+          }
+        },
+        {
+          "name": "user-logout",
+          "request": {
+            "method": "POST",
+            "header": [
+              {"key": "Content-Type", "value": "application/json"},
+              {"key": "Authorization", "value": "Bearer {{token}}"}
+            ],
+            "url": {
+              "raw": "http://localhost:3000/user/logout",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["user", "logout"]
+            }
+          }
+        },
+        {
+          "name": "user-logout-all",
+          "request": {
+            "method": "POST",
+            "header": [
+              {"key": "Content-Type", "value": "application/json"},
+              {"key": "Authorization", "value": "Bearer {{token}}"}
+            ],
+            "url": {
+              "raw": "http://localhost:3000/user/logout/all",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["user", "logout/all"]
+            }
+          }
+        }
+      ]
+    }
+,
+    {
+      "name": "user_activity_logs",
+      "item": [
+        {
+          "name": "user_activity_logs-getByCriteria",
+          "request": {
+            "method": "GET",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"name\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/user_activity_logs/getByCriteria",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["user_activity_logs", "getByCriteria"]
+            }
+          }
+        },
+        {
+          "name": "user_activity_logs-create",
+          "request": {
+            "method": "POST",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"name\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/user_activity_logs/create",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["user_activity_logs", "create"]
+            }
+          }
+        },
+        {
+          "name": "user_activity_logs-update",
+          "request": {
+            "method": "PATCH",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"id\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/user_activity_logs/update",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["user_activity_logs", "update"]
+            }
+          }
+        },
+        {
+          "name": "user_activity_logs-delete",
+          "request": {
+            "method": "DELETE",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"id\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/user_activity_logs/delete",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["user_activity_logs", "delete"]
+            }
+          }
+        }
+      ]
+    }
+,
+    {
+      "name": "user_statuses",
+      "item": [
+        {
+          "name": "user_statuses-getByCriteria",
+          "request": {
+            "method": "GET",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"name\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/user_statuses/getByCriteria",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["user_statuses", "getByCriteria"]
+            }
+          }
+        },
+        {
+          "name": "user_statuses-create",
+          "request": {
+            "method": "POST",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"name\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/user_statuses/create",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["user_statuses", "create"]
+            }
+          }
+        },
+        {
+          "name": "user_statuses-update",
+          "request": {
+            "method": "PATCH",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"id\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/user_statuses/update",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["user_statuses", "update"]
+            }
+          }
+        },
+        {
+          "name": "user_statuses-delete",
+          "request": {
+            "method": "DELETE",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": {\n    \"id\": \"\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/user_statuses/delete",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["user_statuses", "delete"]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
