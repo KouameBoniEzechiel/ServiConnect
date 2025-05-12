@@ -4,4 +4,4 @@ dist/
 logs/
 .history
 setup-node.sh
-/src/tests
+/src/tests/
