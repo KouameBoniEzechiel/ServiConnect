@@ -7,7 +7,7 @@ const { authentification } = require('../middlewares/authentification')
 
 router.post("/user/create", createUser);
 
-router.get("/user/getByCriteria", authentification, getUserByCriteria);
+router.post("/user/getByCriteria", authentification, getUserByCriteria);
 
 router.get("/user/getUserById", authentification, getUserById);
 
