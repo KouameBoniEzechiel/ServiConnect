@@ -6,7 +6,7 @@ function logger(req, res, next) {
 
   const token = headers['authorization'] || 'Aucun token';
 
-  console.log(chalk.blue.bold('\n===================================================================== DÉBUT DES LOGS ====================================================================='));
+  console.log(chalk.blue('\n===================================================================== DÉBUT DES LOGS ====================================================================='));
   console.log(chalk.cyan(`← Méthode:`), chalk.green(`${method}`), chalk.cyan(`URL:`), chalk.yellow(`${originalUrl}`));
   console.log(chalk.cyan(`← Headers:`), headers);
   console.log(chalk.cyan(`← Token:`), chalk.magenta(`${token}`));
@@ -27,19 +27,19 @@ function logger(req, res, next) {
       const duration = Date.now() - start;
       const formatted = format(res.locals.body);
   
-      console.log(chalk.cyan(`← Réponse:\n`), chalk.green.bold(formatted));
+      console.log(chalk.cyan(`← Réponse:\n`), chalk.green(formatted));
       console.log(chalk.cyan(`← Durée:`), chalk.green(`${duration}ms`));
   
       if (res.statusCode >= 400) {
-        console.log(chalk.red.bold(`Erreur: Code ${res.statusCode}`));
+        console.log(chalk.red(`Erreur: Code ${res.statusCode}`));
       } else {
-        console.log(chalk.green.bold(`← Statut: ${res.statusCode}`));
+        console.log(chalk.green(`← Statut: ${res.statusCode}`));
       }
     } catch (e) {
       console.log(chalk.red('Erreur de format de réponse :'), e.message);
     }
 
-    console.log(chalk.blue.bold('===================================================================== FIN DES LOGS =============================================================\n'));
+    console.log(chalk.blue('===================================================================== FIN DES LOGS =============================================================\n'));
   });
 
   next();
