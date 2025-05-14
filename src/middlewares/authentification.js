@@ -4,7 +4,7 @@ require('dotenv');
 const authentification = async(req, res, next) => {
      try { 
         const header = req.header('Authorization').replace("Bearer ", "");
-        const decodeToken = jwt.verify(header, process.env.secret_key);
+        const decodeToken = jwt.verify(header, process.env.SECRET_KEY);
         const user = await User.findOne( {_id: decodeToken._id, 'authTokens.authToken': header});
 
         if(!user) throw new Error();
