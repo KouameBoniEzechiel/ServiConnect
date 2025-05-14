@@ -1,5 +1,5 @@
 const { connectDb } = require('./src/services/database');
-const {logger} = require('./src/middlewares/logger');
+//const {logger} = require('./src/middlewares/logger');
 
 require("dotenv").config();
 const express = require('express');
@@ -9,7 +9,7 @@ const port = process.env.port || 3000;
 connectDb().catch((error) => console.log("erreur: ", error))
 
 app.use(express.json());
-app.use(logger);
+//app.use(logger);
 const admin_logsRoutes = require('./src/routes/admin_logs');
 const booking_statusesRoutes = require('./src/routes/booking_statuses');
 const bookingsRoutes = require('./src/routes/bookings');
