@@ -4,7 +4,7 @@ const { createProviders, getProvidersByCriteria, getProviderById, updateProvider
 
 router.post("/providers/create", createProviders);
 
-router.get("/providers/getByCriteria", getProvidersByCriteria);
+router.post("/providers/getByCriteria", getProvidersByCriteria);
 
 router.get("/providers/getProviderById", getProviderById);
 

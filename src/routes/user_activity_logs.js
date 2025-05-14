@@ -4,7 +4,7 @@ const { createUser_activity_logs, getUser_activity_logsByCriteria, updateUser_ac
 
 router.post("/user_activity_logs/create", createUser_activity_logs);
 
-router.get("/user_activity_logs/getByCriteria", getUser_activity_logsByCriteria);
+router.post("/user_activity_logs/getByCriteria", getUser_activity_logsByCriteria);
 
 router.patch("/user_activity_logs/update", updateUser_activity_logs);
 

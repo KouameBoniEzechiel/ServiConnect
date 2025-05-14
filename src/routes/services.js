@@ -4,7 +4,7 @@ const { createServices, getServicesByCriteria, getServiceById, updateServices, d
 
 router.post("/services/create", createServices);
 
-router.get("/services/getByCriteria", getServicesByCriteria);
+router.post("/services/getByCriteria", getServicesByCriteria);
 
 router.get("/services/getServiceById", getServiceById);
 

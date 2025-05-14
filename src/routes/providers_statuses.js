@@ -4,7 +4,7 @@ const { createProviders_statuses, getProviders_statusesByCriteria, updateProvide
 
 router.post("/providers_statuses/create", createProviders_statuses);
 
-router.get("/providers_statuses/getByCriteria", getProviders_statusesByCriteria);
+router.post("/providers_statuses/getByCriteria", getProviders_statusesByCriteria);
 
 router.patch("/providers_statuses/update", updateProviders_statuses);
 

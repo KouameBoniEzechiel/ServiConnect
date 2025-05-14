@@ -4,7 +4,7 @@ const { createRoles, getRolesByCriteria, updateRoles, deleteRoles } = require('.
 
 router.post("/roles/create", createRoles);
 
-router.get("/roles/getByCriteria", getRolesByCriteria);
+router.post("/roles/getByCriteria", getRolesByCriteria);
 
 router.patch("/roles/update", updateRoles);
 

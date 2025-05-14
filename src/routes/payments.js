@@ -4,7 +4,7 @@ const { createPayments, getPaymentsByCriteria, updatePayments, deletePayments } 
 
 router.post("/payments/create", createPayments);
 
-router.get("/payments/getByCriteria", getPaymentsByCriteria);
+router.post("/payments/getByCriteria", getPaymentsByCriteria);
 
 router.patch("/payments/update", updatePayments);
 

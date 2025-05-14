@@ -4,7 +4,7 @@ const { createAdmin_logs, getAdmin_logsByCriteria, updateAdmin_logs, deleteAdmin
 
 router.post("/admin_logs/create", createAdmin_logs);
 
-router.get("/admin_logs/getByCriteria", getAdmin_logsByCriteria);
+router.post("/admin_logs/getByCriteria", getAdmin_logsByCriteria);
 
 router.patch("/admin_logs/update", updateAdmin_logs);
 

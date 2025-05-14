@@ -4,7 +4,7 @@ const { createReviews, getReviewsByCriteria, getReviewById, updateReviews, delet
 
 router.post("/reviews/create", createReviews);
 
-router.get("/reviews/getByCriteria", getReviewsByCriteria);
+router.post("/reviews/getByCriteria", getReviewsByCriteria);
 
 router.get("/reviews/getReviewById", getReviewById);
 

@@ -4,7 +4,7 @@ const { createBookings, getBookingsByCriteria, getBookingById, updateBookings, d
 
 router.post("/bookings/create", createBookings);
 
-router.get("/bookings/getByCriteria", getBookingsByCriteria);
+router.post("/bookings/getByCriteria", getBookingsByCriteria);
 
 router.get("/bookings/getBookingById", getBookingById);
 

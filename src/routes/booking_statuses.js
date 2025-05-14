@@ -4,7 +4,7 @@ const { createBooking_statuses, getBooking_statusesByCriteria, updateBooking_sta
 
 router.post("/booking_statuses/create", createBooking_statuses);
 
-router.get("/booking_statuses/getByCriteria", getBooking_statusesByCriteria);
+router.post("/booking_statuses/getByCriteria", getBooking_statusesByCriteria);
 
 router.patch("/booking_statuses/update", updateBooking_statuses);
 

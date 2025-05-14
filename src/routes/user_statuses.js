@@ -4,7 +4,7 @@ const { createUser_statuses, getUser_statusesByCriteria, updateUser_statuses, de
 
 router.post("/user_statuses/create", createUser_statuses);
 
-router.get("/user_statuses/getByCriteria", getUser_statusesByCriteria);
+router.post("/user_statuses/getByCriteria", getUser_statusesByCriteria);
 
 router.patch("/user_statuses/update", updateUser_statuses);
 

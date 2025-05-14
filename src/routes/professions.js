@@ -4,7 +4,7 @@ const { createProfessions, getProfessionsByCriteria, updateProfessions, deletePr
 
 router.post("/professions/create", createProfessions);
 
-router.get("/professions/getByCriteria", getProfessionsByCriteria);
+router.post("/professions/getByCriteria", getProfessionsByCriteria);
 
 router.patch("/professions/update", updateProfessions);
 
