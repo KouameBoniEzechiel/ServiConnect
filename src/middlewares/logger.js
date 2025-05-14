@@ -27,7 +27,7 @@ function logger(req, res, next) {
       const duration = Date.now() - start;
       const formatted = format(res.locals.body);
   
-      console.log(chalk.cyan(`← Réponse:\n`), chalk.green(formatted));
+      console.log(chalk.cyan(`← Réponse:\n`), chalk.green.bold(formatted));
       console.log(chalk.cyan(`← Durée:`), chalk.green(`${duration}ms`));
   
       if (res.statusCode >= 400) {
