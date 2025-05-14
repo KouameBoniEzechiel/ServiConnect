@@ -24,6 +24,10 @@ const servicesRoutes = require('./src/routes/services');
 const userRoutes = require('./src/routes/user');
 const user_activity_logsRoutes = require('./src/routes/user_activity_logs');
 const user_statusesRoutes = require('./src/routes/user_statuses');
+const decryptData = require('./src/routes/decrypt');
+const pubkey = require('./src/routes/publicKey');
+
+
 
 app.use(admin_logsRoutes);
 app.use(booking_statusesRoutes);
@@ -39,6 +43,8 @@ app.use(servicesRoutes);
 app.use(userRoutes);
 app.use(user_activity_logsRoutes);
 app.use(user_statusesRoutes);
+app.use(decryptData);
+app.use(pubkey);
 
 app.listen(port, () => {
     console.log(`Le serveur est lancé sur http://localhost:${port}`)

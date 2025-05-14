@@ -1,7 +1,6 @@
 
 const { User } = require('../models/user');
-const { Roles } = require('../models/roles');
-const { User_statuses } = require('../models/user_statuses');
+const { ObjectToBase64 } = require('../utils/utils');
 
 const bcrypt = require('bcrypt');
 
@@ -15,7 +14,16 @@ const createUser = async (req, res) => {
         }
         const user = new User(req.body.data);
         const userSave = await user.save();
-        res.status(201).send({ status: 200, data: userSave, message: "Utilisateur enregistré avec succès !" });
+        const encrypted = ObjectToBase64({
+            status: 201,
+            data: userSave,
+            message: "Utilisateur enregistré avec succès !",
+        });
+        res.status(201).send({
+            encrypted
+        });
+
+        // res.status(201).send({ status: 200, data: userSave, message: "Utilisateur enregistré avec succès !" });
     } catch (error) {
         res.status(400).send({ message: error.message });
     }
@@ -59,12 +67,17 @@ const getUserByCriteria = async (req, res) => {
     try {
         console.log(filter)
         const findAllUser = await User.find(filter).populate("role_id").populate("status_id").skip(index * size).limit(size).sort('-email');
-        res.status(200).send({
+
+        const users = findAllUser.map((user) => user.toJSON());
+        const encrypted = ObjectToBase64({
             status: 200,
             index: index,
             size: size,
             count: findAllUser.length,
-            data: findAllUser.length === 0 ? "Aucun élément correspondant !" : findAllUser,
+            data: users.length === 0 ? "Aucun élément correspondant !" : users
+        });
+        res.status(200).send({
+            encrypted
         });
     } catch (e) {
         res.status(500).send({ data: { message: e.message } });
@@ -94,7 +107,14 @@ const updateUser = async (req, res) => {
         findUser.updatedAt = Date.now();
         findUser.updatedBy = findUser._id;
         await findUser.save();
-        res.status(200).send({ data: { message: "Utilisateur modifié avec succès", data: findUser } });
+        const encrypted = ObjectToBase64({
+            status: 200,
+            data: findUser,
+            message: "Utilisateur modifié avec succès !",
+        });
+        res.status(200).send({
+            encrypted
+        });
     } catch (error) {
         res.status(400).send({ data: { message: error.message } });
     }
@@ -109,7 +129,13 @@ const deleteUser = async (req, res) => {
         findUserToDelete.deletedBy = req.user._id;
         findUserToDelete.deleteAt = Date.now();
         await findUserToDelete.save();
-        res.send({ status: 200, data: "Utilisateur supprimé avec succès !" });
+        const encrypted = ObjectToBase64({
+            status: 200,
+            message: "Utilisateur modifié avec succès !",
+        });
+        res.status(200).send({
+            encrypted
+        });
     } catch (e) {
         res.status(500).send({ data: { message: e.message } });
     }
@@ -124,7 +150,13 @@ const loginUser = async (req, res) => {
         const isMatch = await bcrypt.compare(req.body.data.password, findUser.password);
         if (!isMatch) throw new Error("Vérifiez vos informations de connexion ! !");
         const authToken = await findUser.generateTokenAndSaveUser();
-        res.send({ status: 200, data: findUser });
+        const encrypted = ObjectToBase64({
+            status: 200,
+            data: findUser
+        });
+        res.status(200).send({
+            encrypted
+        });
     } catch (e) {
         res.status(401).send({ data: { message: e.message } });
     }
@@ -134,8 +166,15 @@ const loginUser = async (req, res) => {
 const userInfos = async (req, res) => {
     try {
         if (!req.user || req.user.isDeleted) return res.status(404).send({ status: 404, data: { message: "Utilisateur introuvable." } });
-        const user = await User.findOne({email : req.user.email}).populate("role_id").populate("status_id");
-        res.status(200).send({ status: 200, count: 1, data: user });
+        const user = await User.findOne({ email: req.user.email }).populate("role_id").populate("status_id");
+        const encrypted = ObjectToBase64({
+            status: 200,
+            count: 1,
+            data: user
+        });
+        res.status(200).send({
+            encrypted
+        });
     } catch (e) {
         res.status(500).send({ data: { message: e.message } });
     }
@@ -150,7 +189,14 @@ const userLogout = async (req, res) => {
         const index = req.user.authTokens.findIndex(item => item.authToken === req.auth);
         if (index !== -1) req.user.authTokens.splice(index, 1);
         await req.user.save();
-        res.status(200).send({ status: 200, data: { message: "Utilisateur déconnecté !" } });
+        const encrypted = ObjectToBase64({
+            status: 200,
+            count: 1,
+            data: { message: "Utilisateur déconnecté !" }
+        });
+        res.status(200).send({
+            encrypted
+        });
     } catch (e) {
         res.status(500).send({ data: { message: e.message } });
     }
@@ -161,7 +207,14 @@ const userLogoutAll = async (req, res) => {
     try {
         req.user.authTokens = [];
         await req.user.save();
-        res.status(200).send({ status: 200, data: { message: "Toutes les sessions ont été déconnectées !" } });
+        const encrypted = ObjectToBase64({
+            status: 200,
+            count: 1,
+            data: { message: "Toutes les sessions ont été déconnectées !" }
+        });
+        res.status(200).send({
+            encrypted
+        });
     } catch (e) {
         res.status(500).send({ data: { message: e.message } });
     }

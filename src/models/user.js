@@ -2,6 +2,7 @@ const validator = require("validator");
 const mongoose = require("mongoose");
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
+const {ObjectToBase64} = require("../utils/utils");
 require("dotenv").config();
 
 const userSchema = new mongoose.Schema({
