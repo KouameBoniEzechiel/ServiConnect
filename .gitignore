@@ -5,4 +5,4 @@ logs/
 ../.history
 setup-node.sh
 tests
-src/middleware/logger.js
+src/middlewares/logger.js
