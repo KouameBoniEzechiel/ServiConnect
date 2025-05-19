@@ -1,6 +1,6 @@
 
 const { User } = require('../models/user');
-const { ObjectToBase64 } = require('../utils/utils');
+const { ObjectToBase64, decryptData } = require('../utils/utils');
 
 const bcrypt = require('bcrypt');
 
@@ -143,11 +143,12 @@ const deleteUser = async (req, res) => {
 
 // Connexion d'utilisateur
 const loginUser = async (req, res) => {
-    const filter = { email: req.body.data.email };
+    const dataReceive = decryptData(req.body.data.data)
+    const filter = { email: dataReceive.data.email };
     try {
         const findUser = await User.findOne(filter);
-        if (!findUser || !req.body.data.password) throw new Error("Vérifiez vos informations !");
-        const isMatch = await bcrypt.compare(req.body.data.password, findUser.password);
+        if (!findUser || !dataReceive.data.password) throw new Error("Vérifiez vos informations !");
+        const isMatch = await bcrypt.compare(dataReceive.data.password, findUser.password);
         if (!isMatch) throw new Error("Vérifiez vos informations de connexion ! !");
         const authToken = await findUser.generateTokenAndSaveUser();
         const encrypted = ObjectToBase64({
@@ -167,6 +168,7 @@ const userInfos = async (req, res) => {
     try {
         if (!req.user || req.user.isDeleted) return res.status(404).send({ status: 404, data: { message: "Utilisateur introuvable." } });
         const user = await User.findOne({ email: req.user.email }).populate("role_id").populate("status_id");
+        console.log(user);
         const encrypted = ObjectToBase64({
             status: 200,
             count: 1,

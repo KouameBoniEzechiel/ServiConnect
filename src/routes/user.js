@@ -17,7 +17,7 @@ router.delete("/user/delete", authentification, deleteUser);
 
 router.post("/user/login", loginUser);
 
-router.get("/user/me", authentification, userInfos);
+router.post("/user/me", authentification, userInfos);
 
 router.post("/user/logout", authentification, userLogout);
 
